@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-gold: #C5A059;
+  --color-maroon: #3D1B10;
+  --color-maroon-light: #5C2A1A;
+  --color-luxury-black: #0F0F0F;
+}
+
+@layer base {
+  body {
+    @apply bg-maroon text-white font-sans;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #C5A059 0%, #E8D1A7 50%, #C5A059 100%);
+}
+
+.maroon-gradient {
+  background: linear-gradient(135deg, #3D1B10 0%, #5C2A1A 100%);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #C5A059 0%, #E8D1A7 50%, #C5A059 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
